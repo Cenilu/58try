@@ -1,0 +1,212 @@
+@media screen and (max-width: 429px) and (max-height: 927px) {
+    body {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: linear-gradient(to right, rgba(212, 175, 55, 0.5), rgba(2, 0, 53, 0.3));
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+    }
+
+    .modal {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        overflow: auto;
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+    }
+
+    .modal-content {
+        width: 80%;
+        margin: 15% auto;
+        padding: 5%;
+        background-color: #fffafa;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4.5vw;
+        text-align: center;
+        border: none;
+        border-radius: 4.5vh;
+        box-shadow: 0.4vh 0.4vh 1vh #000000, -0.1vh -0.1vh 1vh #000000;
+        position: relative;
+    }
+
+    #allowButton {
+        width: 15vw;
+        height: 5vh;
+        background-color: #4CAF50;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.5vw;
+        color: white;
+        border: none;
+        border-radius: 3.5vh;
+        cursor: pointer;
+    }
+
+    #cancelButton {
+        width: 15vw;
+        height: 5vh;
+        background-color: #f44336;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.5vw;
+        color: white;
+        border: none;
+        border-radius: 3.5vh;
+        cursor: pointer;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .leaflet-control-geocoder {
+        width: 80%;
+        height: 4%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 10;
+    }
+
+    .leaflet-control-geocoder-form input[type="text"] {
+        width: 160%;
+        padding: 1vh;
+        border: 1px solid #ccc;
+        border-radius: 0.35vh;
+        outline: none;
+        z-index: 10;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 8vh;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: linear-gradient(to right, #d4af37, #020035);
+        border-top-left-radius: 3vh;
+        border-top-right-radius: 3vh;
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        box-shadow: 0.1vh 0.1vh 1vh #000000, -0.1vh -0.1vh 1vh #000000;
+        position: fixed;
+        z-index: 4;
+    }
+
+    .circle {
+        width: 18vw;
+        height: 9vh;
+        background-color: #fffafa;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+        filter: drop-shadow(0.2vh 0.2vh 0.8vh rgb(0, 0, 0, 0.8));
+        position: fixed;
+        z-index: 6;
+    }
+
+    .navbar-circle {
+        width: 20vw;
+        height: 10vh;
+        top: 89%;
+        background: linear-gradient(to right, rgba(212, 175, 55, 1), rgba(2, 0, 53, 1));
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+        position: fixed;
+        z-index: 5;
+    }
+
+    #btnStart {
+        background: none;
+        font-size: 8vw;
+        color: #d4af37;
+        border: none;
+        filter: drop-shadow(0.2vh 0.2vh 0.8vh rgba(0, 0, 0, 0.5));
+        position: fixed;
+        z-index: 7;
+    }
+
+    .fas.fa-stop {
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: #020035;
+    }
+
+    a.logo {
+        pointer-events: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+        transform: translateX(42%);
+        position: fixed;
+        z-index: 8;
+    }
+
+    a.logo img {
+        width: 30%;
+        height: 30%;
+        filter: drop-shadow(0.2vh 0.2vh 0.8vh rgba(0, 0, 0, 0.5));
+    }
+
+    a.icon {
+        pointer-events: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        /* horizontally center */
+        align-items: center;
+        /* vertically center */
+        transform: translateX(42%) translateY(70%);
+        position: fixed;
+        z-index: 8;
+    }
+
+    a.icon img {
+        width: 30%;
+        height: 30%;
+        filter: drop-shadow(0.2vh 0.2vh 0.8vh rgba(0, 0, 0, 0.5));
+    }
+
+    .leaflet-routing-container {
+        display: none !important;
+    }
+}
